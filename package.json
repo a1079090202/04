@@ -1,0 +1,21 @@
+{
+  "name": "community-library",
+  "version": "1.0.0",
+  "description": "社区图书室：书库管理 + 读者档案 + 借阅管理（借书/续借/归还/逾期）",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "migrate": "node src/db/migrate.js",
+    "migrate:down": "node src/db/migrate.js down",
+    "migrate:status": "node src/db/migrate.js status",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "express": "^4.21.0"
+  }
+}

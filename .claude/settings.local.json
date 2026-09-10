@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(npm config *)",
+      "Bash(curl -sI --max-time 8 https://registry.npmjs.org/)",
+      "Bash(npm install *)",
+      "Bash(node *)",
+      "Bash(npm test *)",
+      "Bash(python3 -)",
+      "Bash(pkill -f \"node src/server.js\")",
+      "Bash(xargs -r kill)",
+      "Bash(pkill -f 'src/server[.]js')"
+    ]
+  }
+}
